@@ -1,11 +1,1 @@
-main {
-  padding: 15px;
-}
-
-body {
-  place-items: flex-start;
-}
-
-h1 {
-  font-family: sans-serif;
-}
+@import "tailwindcss";
