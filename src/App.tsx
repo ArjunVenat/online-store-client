@@ -74,6 +74,22 @@ const productList = [
   }
 ]
 
+// Image
+// ${{name}}: (M/F) ${{animal_type}}
+// Age ${{age}} | Weight ${{age}}
+// Price
+
+function ProductList(){
+    return (
+        <div>
+            {productList.map((product) => (
+                <ProductCard product={product}/>
+            )
+            )}
+        </div>
+    )
+    
+}
 function App() {
   return (
     <>
@@ -81,9 +97,7 @@ function App() {
           <h1 className='text-3xl text-blue-600'>My App</h1>
       </div>
       <div className='flex justify-center'>
-          <ProductCard product={productList[0]}/>
-          <ProductCard product={productList[0]}/>
-          <ProductCard product={productList[0]}/>
+          <ProductList/>
       </div>
     </>
     
