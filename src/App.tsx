@@ -74,13 +74,15 @@ const productList = [
   }
 ]
 
+
 function App() {
   return (
     <>
       <div className='flex justify-center'>
           <h1 className='text-3xl text-blue-600'>My App</h1>
       </div>
-      <div className='flex justify-center'>
+      <div className='grid grid-cols-3 gap-2 justify-center m-12'>
+          <ProductCard product={productList[0]} imageSource='../src/images/pig.jpg'/>
           <ProductCard product={productList[0]}/>
           <ProductCard product={productList[0]}/>
           <ProductCard product={productList[0]}/>
