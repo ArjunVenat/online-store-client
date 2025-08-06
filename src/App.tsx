@@ -76,10 +76,17 @@ const productList = [
 
 function App() {
   return (
-    <div className='flex justify-center'>
-        <h1 className='text-3xl text-blue-600'>My App</h1>
-        <ProductCard product={productList[0]}/>
-    </div>
+    <>
+      <div className='flex justify-center'>
+          <h1 className='text-3xl text-blue-600'>My App</h1>
+      </div>
+      <div className='flex justify-center'>
+          <ProductCard product={productList[0]}/>
+          <ProductCard product={productList[0]}/>
+          <ProductCard product={productList[0]}/>
+      </div>
+    </>
+    
   )
 }
 

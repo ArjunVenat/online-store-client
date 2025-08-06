@@ -20,16 +20,17 @@ import cow from '../images/cow.jpg'
 
 
 function ProductCard(props: {product: Product}) {
+  const product = props.product;
   return (
     <>
       <div>
-        <img src={cow} alt='cow image'></img>      
+        <img src={cow} alt='cow image'></img>
         <p>
-          {props.product.animal_name}: {props.product.animal_gender} {props.product.animal_type}
+          {product.animal_name}: {product.animal_gender} {product.animal_type}
           <br/>
-          Age {props.product.age} | Weight {props.product.weight}
+          Age: {product.age} years old | Weight: {product.weight} lbs
           <br/>
-          {props.product.price}
+          Price: ${product.price}
         </p>
       </div>
     </>
